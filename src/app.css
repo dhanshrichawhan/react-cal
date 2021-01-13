@@ -1,0 +1,58 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: cursive;
+  font-size: 1.1rem;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: linear-gradient(to right, #9796f0, #ffc2d3);
+}
+
+.calculator-grid {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+  grid-template-columns: repeat(4, 85px);
+  grid-template-rows: minmax(90px, auto) repeat(5, 85px);
+}
+
+button {
+  cursor: pointer;
+  border: 1px solid whitesmoke;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+button:hover {
+  background-color: rgb(255, 255, 255, 0.9);
+}
+
+.output {
+  grid-column: 1 / -1;
+  background-color: rgb(0, 0, 0, 0.75);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  margin: 0;
+  flex-direction: column;
+  padding: 10px;
+  word-wrap: break all;
+  word-break: break-all;
+}
+
+.equal {
+  grid-column: span 2;
+}
+
+.output .expression {
+  color: rgb(255, 255, 255, 0.75);
+}
+
+.output .result {
+  color: white;
+}
