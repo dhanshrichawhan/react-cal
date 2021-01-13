@@ -1,7 +1,7 @@
 <p align="center">
   <img src="calculator.png" height="50px"/>
   <br><br>
-  <b>URL shortner built with node + express + mongo</b>
+  <b>React Calculator</b>
   <br>
 </p>
 
