@@ -19,7 +19,7 @@ https://react-cal.vercel.app/
 git clone https://github.com/dhanshrichawhan/react-cal
 cd react-cal
 npm install
-npm start # or npm run dev for development
+npm start
 ```
 
 &nbsp;
